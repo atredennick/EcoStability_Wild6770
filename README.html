@@ -91,7 +91,8 @@ N_{2,t+1} = N_{2,t} + N_{2,t} \left[r_2(1-\alpha_{21}N_{1,t} - \alpha_{22}N_{2,t
 <ol style="list-style-type: decimal">
 <li>You’ll want to measure the synchrony of your simulated 2-species community. Fortunately, there is an R package for this, <code>synchrony</code>. To get the package and calculate synchrony, follow these steps in <code>R</code>:</li>
 </ol>
-<pre class="r"><code>install.packages(&quot;synchrony&quot;)
+<pre class="r"><code>install.packages(&quot;synchrony&quot;)   # install the package
+library(&quot;synchrony&quot;)            # load the package
 synch &lt;- community.sync(N)      # calculates synchrony and temporal correlation of community matrix N</code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li>You’ll want to calculate the coefficient of variation of the total community biomass. A couple handy functions:</li>
@@ -99,6 +100,7 @@ synch &lt;- community.sync(N)      # calculates synchrony and temporal correlati
 <pre class="r"><code>rowSums()
 mean()
 sd()</code></pre>
+<p><em>Bonus points if you can recreate something very similar to Loreau and de Mazancourt’s Fig. 1.</em></p>
 <hr />
 </div>
 </div>

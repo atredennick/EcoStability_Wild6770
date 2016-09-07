@@ -31,7 +31,8 @@ One of the most interesting and novel contributions in Loreau and de Mazancourt 
 1. You'll want to measure the synchrony of your simulated 2-species community. Fortunately, there is an R package for this, ```synchrony```. To get the package and calculate synchrony, follow these steps in ```R```:
 
 ```{r synch, eval=FALSE}
-install.packages("synchrony")
+install.packages("synchrony")   # install the package
+library("synchrony")            # load the package
 synch <- community.sync(N)      # calculates synchrony and temporal correlation of community matrix N
 ```
 
@@ -42,6 +43,8 @@ rowSums()
 mean()
 sd()
 ```
+
+*Bonus points if you can recreate something very similar to Loreau and de Mazancourt's Fig. 1.*
 
 ----------------------
 
