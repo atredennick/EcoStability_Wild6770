@@ -42,3 +42,34 @@ rowSums()
 mean()
 sd()
 ```
+
+----------------------
+
+##  Assignment (due October x, 2016)
+Bai et al. (2004) analyze a long-term biomass data set from Inner Mongolian grasslands and claim to provide evidence that compensatory interactions among species and plant functional types (PFTs) stabilize biomass production. I tried to get my hands on that original dataset for you to analyze, but couldn't get access. So we will do the next best thing, and repeat Bai et al.'s analysis on a very similar dataset.
+
+The shortgrass steppe of North America, located in the driest, westernmost portion of the Great Plains, is analogous in many ways to the Inner Mongolian grasslands. Both have harsh continental climates, with cold winters and hot summers, and precipitation falling during the spring and summer growing seasons. Biomass production is closely and positively related to precipitation. Of course there are some differences too. The shortgrass steppe is located a bit further south, is warmer, and is dominated by C4 grasses, whereas C3 grasses are more important in the Inner Mongolian steppe studied by Bai et al.
+
+The dataset you will analyze comes from the Shortgrass Steppe LTER site northeast of Fort Collins, CO [(link)](http://sgs.cnr.colostate.edu/Default.htm). It includes biomass production per 0.25 m^2^ quadrat, by species, from 1983 through 2002, at three different locations (site 1 = ridgetop, 2 = midslope, and 3 = lowland). You will find three data files in the ```data/``` folder in your ```EcoStability_Wild6770/``` directory: ```species_biomass.csv```, ```pft_biomass.csv```, and ```ftype.csv```. You will need to download these files to a folder on your PC or jump drive. The first file lists biomass per species, and the second aggregates biomass by plant functional type. The last file gives the full species names and functional types in case you are curious. "csv" stands for Comma Separated Values. These files are easy to open in Excel (just for a peek) and to import into R (use ```read.csv()```).
+
+Bai et al. offer two pieces of evidence for the stabilizing effects of compensation. First, they show that the coefficient of variation of biomass production decreases at higher (more aggregated) levels of organization. Second, they show negative correlations in production among species and PFTs. We will conduct both of these analyses for the shortgrass steppe data, plus a "bonus" analysis.
+
+#### The assignment has three problems:  
+
+1. Calculate the coefficient of variation (CV) for individual species' biomass production. Compare this value to the CV for PFTs, and for total community production. You should analyze data from each of the three sites separately. Try to follow Bai et al.'s methods. For example, they excluded rare species from the analysis.  
+**What do your results suggest about stability, following the interpretation of CV used by Bai et al?**
+
+2. Is it possible that the results you got for question 1 are just a statistical artifact? Try this: use rnorm() to generate 5 different random variates. Make each random variate 20 numbers long, just like the 20 years of data we have for each species at each site. Specify different means, so that some of your random variates resemble dominant species, and other rare species. First, calculate the CV for each of your random "species." Next, sum across your random variates to get the "community level" production, and then calculate its CV.  
+**What did you find?**
+
+3. I would argue that Bai et al.'s second test for compensation, which requires showing negative correlations among species or PFTs, is a much stronger test. Using the same data, calculate the correlations among pairs of species, and then among pairs of functional groups. You will have some decisions to make about summarizing these results. You could just count the number of positive and negative correlations, but this ignores their strength. Maybe you could just count the significant correlations. Or just discuss the results qualitatively? I will let you decide.  
+**How do your results compare to Bai et al.'s? Did this assignment change your opinion of their paper?**  
+  
+The following R functions will come in handy:
+
+```{r handys2, eval=FALSE}
+cor()   # if x is a 5 column matrix, you can run cor(x) and it will
+        # spit out all pairwise correlations of the 5 variables
+cor.test()   # if you want p-values, but you have to test each pair
+             # of variables separately
+```
