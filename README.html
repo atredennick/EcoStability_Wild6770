@@ -77,13 +77,29 @@ img {
 </ol>
 <hr />
 </div>
-<div id="in-class-exercise" class="section level3">
-<h3>In-Class Exercise</h3>
+<div id="in-class-exercise" class="section level2">
+<h2>In-Class Exercise</h2>
 <p>Building on your expertise with the 2-species Lotka-Volterra model, we will use model simulations to help us understand the mechanisms that increase, or decrease, ecosystem stability in competitive communities. Recall the Lotka-Volterra equations with environmental stochasticity (<span class="math">\(z_{i,t}\)</span>):</p>
 <p><span class="math">\[
 N_{1,t+1} = N_{1,t} + N_{1,t} \left[r_1(1-\alpha_{11}N_{1,t} - \alpha_{12}N_{2,t}) + z_{1,t} \right], \\
-N_{2,t+1} = N_{2,t} + N_{2,t} \left[r_2(1-\alpha_{21}N_{1,t} - \alpha_{22}N_{2,t}) + z_{2,t} \right]
+N_{2,t+1} = N_{2,t} + N_{2,t} \left[r_2(1-\alpha_{21}N_{1,t} - \alpha_{22}N_{2,t}) + z_{2,t} \right].
 \]</span></p>
+<p>As before, we are using a version without carrying capacity (<span class="math">\(K\)</span>), so this formulation will look a little bit different than the equations in Loreau and de Mazancourt (2013). But, the essential features are still there. For example, we still have inter (<span class="math">\(\alpha_{ij}\)</span>’s) and intraspecific (<span class="math">\(\alpha_{ii}\)</span>’s) competition and environmental stochasticity (<span class="math">\(z_{i,t}\)</span> in our model, <span class="math">\(\sigma_{ei}\mu_{ei}(t)\)</span> in Loreau and de Mazancourt’s model). Therefore, we should be able to reproduce Loreau and de Mazancourt’s results, at least qualitatively.</p>
+<div id="is-competition-stabilizing-or-destabilizing" class="section level3">
+<h3>Is competition stabilizing or destabilizing?</h3>
+<p>One of the most interesting and novel contributions in Loreau and de Mazancourt (2013) is on the role of interspecific competition in determining ecosystem stability. Working with a partner, discuss whether interspecific competition is stabilizing or destabilizing, and why, based on your reading of Loreau and de Mazancourt. Then, use the environmentally stochastic Lotka-Volterra model to prove it to yourself. A couple things might be helpful here:</p>
+<ol style="list-style-type: decimal">
+<li>You’ll want to measure the synchrony of your simulated 2-species community. Fortunately, there is an R package for this, <code>synchrony</code>. To get the package and calculate synchrony, follow these steps in <code>R</code>:</li>
+</ol>
+<pre class="r"><code>install.packages(&quot;synchrony&quot;)
+synch &lt;- community.sync(N)      # calculates synchrony and temporal correlation of community matrix N</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>You’ll want to calculate the coefficient of variation of the total community biomass. A couple handy functions:</li>
+</ol>
+<pre class="r"><code>rowSums()
+mean()
+sd()</code></pre>
+</div>
 </div>
 </div>
 
