@@ -9,9 +9,9 @@
 -------------------
 
 ### Readings
-1. Loreau, M. and C. de Mazancourt. 2013. Biodiversity and ecosystem stability: a synthesis of underlying mechanisms. *Ecology Letters* **16**:106-115. [[pdf]](http://github.com/atredennick/EcoStability_Wild6770/pdfs/Loreau_2013_ELE.pdf) [[web]](http://onlinelibrary.wiley.com/doi/10.1111/ele.12073/abstract)
+1. Loreau, M. and C. de Mazancourt. 2013. Biodiversity and ecosystem stability: a synthesis of underlying mechanisms. *Ecology Letters* **16**:106-115. [[pdf]](http://github.com/atredennick/EcoStability_Wild6770/blob/master/pdfs/Loreau_2013_ELE.pdf) [[web]](http://onlinelibrary.wiley.com/doi/10.1111/ele.12073/abstract)
 
-2. Bai, Y., H. Xingguo, J. Wu, Z. Chen, and L. Li. 2004. Ecosystem stability and compensatory effects in the Inner Mongolia grassland. *Nature* **431**:181-184. [[pdf]](http://github.com/atredennick/EcoStability_Wild6770/pdfs/Bai_2004_Nature.pdf) [[web]](http://www.nature.com/nature/journal/v431/n7005/abs/nature02850.html)
+2. Bai, Y., H. Xingguo, J. Wu, Z. Chen, and L. Li. 2004. Ecosystem stability and compensatory effects in the Inner Mongolia grassland. *Nature* **431**:181-184. [[pdf]](http://github.com/atredennick/EcoStability_Wild6770/blob/master/pdfs/Bai_2004_Nature.pdf) [[web]](http://www.nature.com/nature/journal/v431/n7005/abs/nature02850.html)
 
 -------------------
 
