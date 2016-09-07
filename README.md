@@ -16,8 +16,9 @@
 -------------------
 
 ### In-Class Exercise
-Building on your expertise with the 2-species Lotka-Volterra model, we will use model simulations to help us understand the mechanisms that increase, or decrease, ecosystem stability in competitive communities. Recall the Lotka-Volterra equations with environmental stochasticity (*z*):
+Building on your expertise with the 2-species Lotka-Volterra model, we will use model simulations to help us understand the mechanisms that increase, or decrease, ecosystem stability in competitive communities. Recall the Lotka-Volterra equations with environmental stochasticity ($z_{i,t}$):
 
-\begin{align}
-N_{1,t+1} = N_{1,t} + N_{1,t} \left[r_1(1-\alpha_{11}N_{1,t} - \alpha{12}N_{2,t}) + z_{1,t} \right]
-\end{align}
+$$
+N_{1,t+1} = N_{1,t} + N_{1,t} \left[r_1(1-\alpha_{11}N_{1,t} - \alpha_{12}N_{2,t}) + z_{1,t} \right], \\
+N_{2,t+1} = N_{2,t} + N_{2,t} \left[r_2(1-\alpha_{21}N_{1,t} - \alpha_{22}N_{2,t}) + z_{2,t} \right]
+$$
