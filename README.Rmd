@@ -9,7 +9,8 @@
 -------------------
 
 ### Readings
-1. Loreau, M. and C. de Mazancourt. 2013. Biodiversity and ecosystem stability: a synthesis of underlying mechanisms. *Ecology Letters* **16**:106-115. [[pdf]](http://github.com/atredennick/EcoStability_Wild6770/blob/master/pdfs/Loreau_2013_ELE.pdf) [[web]](http://onlinelibrary.wiley.com/doi/10.1111/ele.12073/abstract)
+1. Loreau, M. and C. de Mazancourt. 2013. Biodiversity and ecosystem stability: a synthesis of underlying mechanisms. *Ecology Letters* **16**:106-115. [[pdf]](http://github.com/atredennick/EcoStability_Wild6770/blob/master/pdfs/Loreau_2013_ELE.pdf) [[web]](http://onlinelibrary.wiley.com/doi/10.1111/ele.12073/abstract)  
+*Note*: I've <span style="background-color: #FF7F7F">highlighted in red</span> some techical parts of the paper that you don't need to read.
 
 2. Bai, Y., H. Xingguo, J. Wu, Z. Chen, and L. Li. 2004. Ecosystem stability and compensatory effects in the Inner Mongolia grassland. *Nature* **431**:181-184. [[pdf]](http://github.com/atredennick/EcoStability_Wild6770/blob/master/pdfs/Bai_2004_Nature.pdf) [[web]](http://www.nature.com/nature/journal/v431/n7005/abs/nature02850.html)
 
@@ -67,6 +68,9 @@ Bai et al. offer two pieces of evidence for the stabilizing effects of compensat
 
 3. I would argue that Bai et al.'s second test for compensation, which requires showing negative correlations among species or PFTs, is a much stronger test. Using the same data, calculate the correlations among pairs of species, and then among pairs of functional groups. You will have some decisions to make about summarizing these results. You could just count the number of positive and negative correlations, but this ignores their strength. Maybe you could just count the significant correlations. Or just discuss the results qualitatively? I will let you decide.  
 **How do your results compare to Bai et al.'s? Did this assignment change your opinion of their paper?**  
+
+4. Loreau and de Mazancourt's paper represents the contemporary view of how diversity can increase ecosystem stability.  
+**How can Bai et al.'s results be placed within Loreau and de Mazancourt's framework?**
   
 The following R functions will come in handy:
 
